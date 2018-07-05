@@ -1,0 +1,17 @@
+body
+{
+background-image: linear-gradient(
+60deg,
+rgb(241, 137, 137) 25%
+rgb(92, 241, 92) 25%
+rgb(247, 247, 112) 100%
+);
+background-color: rgb(94, 94, 252);
+text-align: center;
+}
+
+h1{
+    background-color: aquamarine
+    forestgreen;
+    font-feature-settings: "aalt";
+}
