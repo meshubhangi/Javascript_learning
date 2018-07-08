@@ -23,3 +23,17 @@ for (var i = 1; i <= limit; i++){
         alert("incorrect. \nYou have guessed: " + guesses.toString() + "\nTries remaining: " + (limit - i));
     }
 }
+
+// if the user ran out of tries, let them know the game is over
+if(!won){
+    document.write("Sorry, you ran out of tries. Game over.The correct number was: " + number);
+}
+
+function isPreviousGuess(){
+    for(var i = 1; i < guesses.length; i++){
+        if(guesses[i] == guess){
+            return true;
+        }
+    }
+    return false;
+}
