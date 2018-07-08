@@ -1,16 +1,13 @@
-var number = Math.floor(Math.random() * 100);
+var number = 4;
 var guess;
 var limit = 5;
 var won =  false;
 var guesses = [];
 
-// game control loop - iterates for each try
-for (var i = 1; i <= limit; i++){
-    // prompt user for their guess
-    do{
-        guess = parseInt(prompt("Guess a number"));
-    } while(isNaN(guess) || isPreviousGuess(guess));
-    
+for (i = 1; i <= limit; i++){
+    // prompt user for their guess 
+    guess = prompt("Guess a number");
+
     // if correct: let the user know they won
     if(guess == number){
         document.write("Correct! You won.");
@@ -26,14 +23,5 @@ for (var i = 1; i <= limit; i++){
 
 // if the user ran out of tries, let them know the game is over
 if(!won){
-    document.write("Sorry, you ran out of tries. Game over.The correct number was: " + number);
-}
-
-function isPreviousGuess(){
-    for(var i = 1; i < guesses.length; i++){
-        if(guesses[i] == guess){
-            return true;
-        }
-    }
-    return false;
+    document.write("Sorry, you ran out of tries. Game over.");
 }
