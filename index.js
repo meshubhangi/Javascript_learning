@@ -1,6 +1,4 @@
-var list = document.getElementById("myList");
-var newItem = document.createElement("li");
-newItem.innerHTML = "new item created dynamically";
-
-var listItems = list.children; 
-list.insertBefore(newItem, listItems[1]); 
+var list1 = document.getElementById("yours");
+var list2 = document.getElementById("mine");
+var item = list1.children[3]; 
+list2.appendChild(item);
