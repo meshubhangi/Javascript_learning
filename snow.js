@@ -1,3 +1,4 @@
+<!-- this script got from www.javascriptfreecode.com-Coded by: Krishna Eydatoula -->
 <script>
 // Set the number of snowflakes (more than 30 - 40 not recommended)
 var snowmax=35
@@ -40,14 +41,14 @@ var x_mv=new Array();
 var crds=new Array();
 var lftrght=new Array();
 var browserinfos=navigator.userAgent 
-var ie5=document.alldocument.getElementById!browserinfos.match(/Opera/)
-var ns6=document.getElementById!document.all
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
 var opera=browserinfos.match(/Opera/)  
 var browserok=ie5||ns6||opera
 
 function randommaker(range) {		
-	rand=Math.floor(range*Math.random());
-return rand
+	rand=Math.floor(range*Math.random())
+    return rand
 }
 
 function initsnow() {
@@ -105,7 +106,3 @@ for (i=0;i<=snowmax;i++) {
 if (browserok) {
 	window.onload=initsnow
 }
-</script>
-
-
-<font face="Tahoma"><a target="_blank" href="http://www.javascriptfreecode.com/"><span style="font-size: 8pt; text-decoration: none">JavaScript Free Code</span></a></font>
