@@ -11,11 +11,12 @@ for (i = 1; i <= limit; i++){
         won = true;
         break;
     }
-
+    // if incorrect: add number to guesses array
     else{
         guesses[i] = guess;
         alert("incorrect. \nYou have guessed: " + guesses.toString() + "\nTries remaining: " + (limit - i));
     }
 }
 if(!won){
-    document.write("Sorry, you ran out of tries. 
+    document.write("Sorry, you ran out of tries. Game over.");
+}
