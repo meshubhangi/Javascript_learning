@@ -18,5 +18,4 @@ for (i = 1; i <= limit; i++){
     }
 }
 if(!won){
-    document.write("Sorry, you ran out of tries. Game over.");
-}
+    document.write("Sorry, you ran out of tries. 
