@@ -10,7 +10,7 @@ for (i = 1; i <= limit; i++){
         document.write("Correct! You won.");
         won = true;
         break;
-    }
+    } 
 
     else{
         guesses[i] = guess;
