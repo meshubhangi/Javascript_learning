@@ -9,7 +9,7 @@ for (i = 1; i <= limit; i++){
     if(guess == number){
         document.write("Correct! You won.");
         won = true;
-        break;
+        break;.....
     } 
 
     else{
