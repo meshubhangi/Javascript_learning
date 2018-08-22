@@ -18,3 +18,4 @@ var guesses = [];
 if(!won){
     document.write("Sorry, you ran out of tries. Game over.");
 }  
+ 
