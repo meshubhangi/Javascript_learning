@@ -9,7 +9,7 @@ var guesses = [];
         document.write("Correct! You won.");
         won = true;
         break;
-    } 
+    }
      else{
         guesses[i] = guess;
         alert("incorrect. \nYou have guessed: " + guesses.toString() + "\nTries remaining: " + (limit - i));
