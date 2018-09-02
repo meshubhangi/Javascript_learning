@@ -14,7 +14,7 @@ var guesses = [];
         guesses[i] = guess;
         alert("incorrect. \nYou have guessed: " + guesses.toString() + "\nTries remaining: " + (limit - i));
     }
-} 
+}
 if(!won){
     document.write("Sorry, you ran out of tries. Game over.");
 }
