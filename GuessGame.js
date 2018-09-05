@@ -6,7 +6,7 @@ var guesses = [];
  for (i = 1; i <= limit; i++){
     guess = prompt("Guess a number");
     if(guess == number){
-        document.write("Correct! You won.");
+        document.write("Correct! You won."); 
         won = true;
         break;  
     }
