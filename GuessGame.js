@@ -8,7 +8,7 @@ var guesses = [];
     if(guess == number){
         document.write("Correct! You won.");
         won = true;
-        break; 
+        break;  
     }
      else{
         guesses[i] = guess;
