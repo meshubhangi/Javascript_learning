@@ -7,7 +7,7 @@ var guesses = [];
     guess = prompt("Guess a number");
     if(guess == number){
         document.write("Correct! You won."); 
-        won = true;
+        won = true; 
         break;  
     } 
      else{
